@@ -24,4 +24,12 @@
         {\n                    kind\n                    name\n                  }\n
         \               }\n              }\n            }\n          }\n        }\n
         \     }\n    }\n  "
+    - name: fetchOneProduct
+      query: |-
+        query fetchOneProduct {
+          products(limit: 1, order_by: {created_at: desc}) {
+            id
+            name
+          }
+        }
   comment: Managed by pro hasura
